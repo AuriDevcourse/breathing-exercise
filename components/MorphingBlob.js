@@ -13,16 +13,12 @@ const MorphingBlob = () => {
       <StyledGradient
         colors={['rgba(112,58,199,0.2)', 'rgba(112,58,199,0.1)', 'rgba(112,58,199,0.05)', 'transparent']}
         locations={[0, 0.3, 0.6, 1]}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full 
-                  rounded-full opacity-50"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-full opacity-50"
       />
       
       {/* Morphing blob */}
       <StyledView 
-        className="relative w-full h-full bg-blob-purple 
-                   rounded-blob animate-blob 
-                   [transform-style:preserve-3d]
-                   [perspective:1000px]"
+        className="relative w-full h-full bg-blob-purple rounded-blob animate-blob [transform-style:preserve-3d] [perspective:1000px]"
       >
         {/* Inner shadows */}
         <StyledView 
